@@ -1,18 +1,20 @@
+import defaultTheme from 'tailwindcss/defaultTheme'
+
 module.exports = {
-    content: ["./app/**/*.{ts,tsx}"],
-    theme: {
-      extend: {
-        colors: {
-          primary: "#8C5AE8",
-          backgroundLight: "#F9F9F9",
-          backgroundDark: "#121212",
-        },
-        fontFamily: {
-            heading: ['var(--font-heading)', 'sans-serif'],
-            body: ['var(--font-body)', 'sans-serif'],
-        },
+  content: ["./app/**/*.{ts,tsx}"],
+  theme: {
+    extend: {
+      colors: {
+        background: 'var(--background)',
+        foreground: 'var(--foreground)',
+        primary: 'var(--primary)',
+        secondary: 'var(--secondary)',
+      },
+      fontFamily: {
+        sans: ['var(--font-body)', ...defaultTheme.fontFamily.sans],
+        heading: ['var(--font-heading)', ...defaultTheme.fontFamily.sans],
       },
     },
-    plugins: [],
-  };
-  
+  },
+  plugins: [],
+};

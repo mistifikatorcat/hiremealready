@@ -8,7 +8,7 @@ export default function Hero() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="text-4xl sm:text-5xl font-heading font-bold text-gray-900 dark:text-white mb-6"
+        className="text-4xl sm:text-5xl font-heading text-gray-900 dark:text-white mb-6"
       >
         Hi, I’m Daniel.
       </motion.h1>

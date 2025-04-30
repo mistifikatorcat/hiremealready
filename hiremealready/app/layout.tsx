@@ -1,18 +1,19 @@
 import type { Metadata } from "next";
+import localFont from 'next/font/local'
 import { Hubot_Sans, IBM_Plex_Mono } from "next/font/google";
 import "../styles/globals.css";
 
 const hubotSans = Hubot_Sans({
-  variable: "--font-heading",
-  subsets: ["latin"],
-});
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  variable: '--font-heading',      // ← you need this
+})
 
 const ibmMono = IBM_Plex_Mono({
-  subsets: ["latin"],
-  variable: "--font-body",
-  weight: ['400', '500', '600'],
-  display: 'swap'
-});
+  subsets: ['latin'],
+  weight: ['300', '600'],
+  variable: '--font-body',         // ← and this
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,10 +26,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${hubotSans.variable} ${ibmMono.variable} antialiased`}
-      >
+    <html
+      lang="en">
+      <body className="font-sans antialiased">
+
         {children}
       </body>
     </html>
