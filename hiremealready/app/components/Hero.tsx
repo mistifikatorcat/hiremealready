@@ -21,6 +21,9 @@ export default function Hero() {
       >
         I write front-ends, back-end if you ask, fight bugs, and refresh my inbox like it’s a slot machine.
         Currently seeking a job, a sign from the universe, or at least a good cup of coffee.
+        <br />
+        <br />
+        Please hire me before I start a YouTube channel about CSS and mental breakdowns.
       </motion.p>
 
       <motion.div
