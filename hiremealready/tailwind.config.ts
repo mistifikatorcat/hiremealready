@@ -1,7 +1,12 @@
 import defaultTheme from 'tailwindcss/defaultTheme'
 
 module.exports = {
-  content: ["./app/**/*.{ts,tsx}"],
+  content: [
+    "./app/**/*.{ts,tsx,js,jsx}",
+    "./components/**/*.{ts,tsx,js,jsx}",
+    // if you use a pages dir:
+    "./pages/**/*.{ts,tsx,js,jsx}",
+  ],
   theme: {
     extend: {
       colors: {
@@ -11,8 +16,8 @@ module.exports = {
         secondary: 'var(--secondary)',
       },
       fontFamily: {
-        sans: ['var(--font-body)', ...defaultTheme.fontFamily.sans],
-        heading: ['var(--font-heading)', ...defaultTheme.fontFamily.sans],
+        sans: ['var(--font-body)'],
+        heading: ['var(--font-heading)'],
       },
     },
   },
