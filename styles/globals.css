@@ -4,8 +4,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Hubot+Sans:wght@400;700&family=IBM+Plex+Mono:wght@300;600&display=swap");
 
 
-@tailwind utilities;
-
 :root {
 
   --font-heading: "Hubot Sans", sans-serif;
