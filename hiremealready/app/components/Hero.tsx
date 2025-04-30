@@ -33,13 +33,13 @@ export default function Hero() {
         className="flex flex-col sm:flex-row gap-4"
       >
         <a
-          href="#"
-          className="px-6 py-3 text-white bg-primary rounded-lg text-sm sm:text-base font-semibold hover:brightness-110"
+          href="mailto:danyaevgrafov@gmail.com"
+          className="px-6 py-3 text-gray-700 dark:text-gray-300 bg-primary rounded-lg text-sm sm:text-base font-semibold hover:brightness-110"
         >
           Interview Me
         </a>
         <a
-          href="#"
+          href="https://myportfolio-gilt-delta.vercel.app"
           className="px-6 py-3 border border-primary text-primary rounded-lg text-sm sm:text-base font-semibold hover:bg-primary hover:text-white transition-colors"
         >
           View Portfolio

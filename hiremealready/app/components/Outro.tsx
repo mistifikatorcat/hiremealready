@@ -25,7 +25,7 @@ export default function Outro() {
             href="https://myportfolio-gilt-delta.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-primary underline hover:no-underline text-white"
+            className="text-primary underline hover:no-underline text-black dark:text-white"
           >
            here's my actual portfolio
           </a>
